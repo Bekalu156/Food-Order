@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('img/SHF_home-slide-1.jpg') no-repeat;
+
+}
+.container{
+    display: flex;
+    color: white;
+}
+.logo{
+    margin-left: 5%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+nav ul li a:hover{
+    color: #f1c40f
+}
+.body{
+    margin-top: 10%;
+    margin-left: 30px;
+    color: white;
+}
+.body h2{
+    font-size: 50px;
+}
+.body p{
+    font-size: 30px;
+    color: #f1c40f;
+}
+.body button{
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.body button:hover{
+    background: #f1c40f;
+    color: black;
+}
