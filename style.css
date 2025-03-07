@@ -9,7 +9,9 @@ body{
     color: white;
 }
 .logo{
-    margin-left: 5%;
+    margin-left: 3%;
+    width: 8%;
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -26,7 +28,7 @@ nav ul{
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 
 }
 nav ul li a:hover{
@@ -54,6 +56,50 @@ nav ul li a:hover{
     cursor: pointer;
 }
 .body button:hover{
+    background: #f1c40f;
+    color: black;
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.menu-item {
+    background: #333;
+    padding: 15px;
+    margin: 15px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+}
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.menu-item h3 {
+    margin: 10px 0;
+}
+.menu-item p {
+    color: #bbb;
+    font-size: 14px;
+}
+.menu-item .price {
+    color: #ff6600;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu-item button {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.menu-item button:hover {
     background: #f1c40f;
     color: black;
 }
