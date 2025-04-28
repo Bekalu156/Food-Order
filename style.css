@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background: url('img/SHF_home-slide-1.jpg') no-repeat;
-
+    font-family: "Tagesschrift", system-ui;
 }
 .container{
     display: flex;
@@ -12,18 +12,23 @@ body{
     margin-left: 3%;
     width: 8%;
     cursor: pointer;
+    margin-top: 2%;
 }
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50%;
+    margin-left: 53%;
     text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    
+
 }
 nav ul{
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 35px;
 }
 nav ul li a{
     color: white;
@@ -32,19 +37,37 @@ nav ul li a{
 
 }
 nav ul li a:hover{
-    color: #f1c40f
+    color: #f1c40f;
+    box-shadow: yellow 0px 0px 20px;
+}
+
+
+nav ul li a.active{
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+nav ul li a.active:hover{
+    color: #f1c40f;
+    font-weight: bold;
 }
 .body{
     margin-top: 10%;
     margin-left: 30px;
     color: white;
 }
-.body h2{
-    font-size: 50px;
+.body img{
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+
 }
+
 .body p{
     font-size: 30px;
     color: #f1c40f;
+    font-family: "Playwrite RO", cursive;
 }
 .body button{
     border: 1px solid white;
@@ -58,6 +81,7 @@ nav ul li a:hover{
 .body button:hover{
     background: #f1c40f;
     color: black;
+    box-shadow: yellow 0px 0px 20px;
 }
 .menu-container {
     display: flex;
@@ -103,3 +127,157 @@ nav ul li a:hover{
     background: #f1c40f;
     color: black;
 }
+.more-btn {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.more-btn:hover {
+    background: #f1c40f;
+    color: black;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        margin-left: 0;
+    }
+    .body {
+        text-align: center;
+        margin-left: 0;
+    }
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item {
+        width: 90%;
+    }
+}
+
+/* From Uiverse.io by OnlyCodeChannel */ 
+.searchBox {
+    display: flex;
+    max-width: 260px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -5%;
+    margin-left: 42%;
+    padding: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+  }
+  
+  .searchButton {
+    color: white;
+    position: absolute;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f1c40f;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  }
+  /*hover effect*/
+  button:hover {
+    color: #fff;
+    background-color: #ff6600;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+  }
+  /*button pressing effect*/
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+  .searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
+  }
+  
+/* From Uiverse.io by Yaya12085 */ 
+.form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form .title {
+    color: #ff6600;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f1c40f;
+    color: #fff;
+    cursor: pointer;
+  }
+      
+  
+      
